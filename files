@@ -1,0 +1,9 @@
+# Manually listed to keep track of things
+
+nvim_dir=~/.config/nvim/
+
+togather=( \
+init.vim \
+cfg \
+lua \
+)

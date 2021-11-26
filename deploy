@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source ./files
+
+for f in ${togather[@]}; do
+    cp -r ./$f $nvim_dir
+done
