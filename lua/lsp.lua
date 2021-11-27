@@ -3,7 +3,7 @@ local autocomp = require('autocomplete')
 
 vim.lsp.set_log_level("debug")
 
-local servers = { 'hls', 'clangd', 'eslint' }
+local servers = { 'hls', 'clangd', 'eslint', 'pyright' }
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
