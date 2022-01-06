@@ -35,6 +35,8 @@ Plugin 'hrsh7th/cmp-path'
 Plugin 'hrsh7th/cmp-cmdline'
 Plugin 'hrsh7th/nvim-cmp'
 
+Plugin 'vim-pandoc/vim-pandoc'
+
 call vundle#end()
 " ==== END Vunlde =====
 

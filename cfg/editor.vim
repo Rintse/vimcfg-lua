@@ -99,6 +99,10 @@ nnoremap <Space> <Nop>
 let mapleader = " "
 let localleader = "\\"
 
+" Disable ZZ to close (accidental capslock)
+nnoremap Z <Nop>
+nnoremap ZZ <Nop>
+
 " Easy black hole reg
 nnoremap - "_
 
