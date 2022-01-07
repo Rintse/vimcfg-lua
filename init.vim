@@ -2,40 +2,39 @@ set nocompatible              " be iMproved, required
 filetype plugin indent on
 
 " ==== BEGIN Vunlde =====
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'mhinz/neovim-remote'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'preservim/nerdcommenter'
+Plug 'VundleVim/Vundle.vim'
+Plug 'mhinz/neovim-remote'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
+Plug 'preservim/nerdcommenter'
 
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'preservim/nerdtree'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'preservim/nerdtree'
 
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
-Plugin 'RRethy/vim-illuminate'
+Plug 'RRethy/vim-illuminate'
 
-Plugin 'lervag/vimtex'
-Plugin 'neovim/nvim-lspconfig'
+Plug 'lervag/vimtex'
+Plug 'neovim/nvim-lspconfig'
 
 " Autocomplete (cmp)
-Plugin 'hrsh7th/cmp-vsnip'
-Plugin 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
 
-Plugin 'hrsh7th/cmp-nvim-lsp'
-Plugin 'hrsh7th/cmp-buffer'
-Plugin 'hrsh7th/cmp-path'
-Plugin 'hrsh7th/cmp-cmdline'
-Plugin 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
 
-call vundle#end()
+call plug#end()
 " ==== END Vunlde =====
 
 " General editor configuration
