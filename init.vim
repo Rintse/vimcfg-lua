@@ -1,10 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype plugin indent on
 
-" ==== BEGIN Vunlde =====
+" ==== BEGIN Plug =====
 call plug#begin()
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'mhinz/neovim-remote'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -33,9 +32,10 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'vim-pandoc/vim-pandoc'
 
 call plug#end()
-" ==== END Vunlde =====
+" ==== END Plug =====
 
 " General editor configuration
 source ~/.config/nvim/cfg/editor.vim
