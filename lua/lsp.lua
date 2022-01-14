@@ -25,8 +25,8 @@ local on_attach = function(client, bufnr)
     set_key('n', '<Leader>d', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
     set_key('n', '<Leader>gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     set_key('n', '<Leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-    set_key('n', '<Leader>pe', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-    set_key('n', '<Leader>ne', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+    set_key('n', '<Leader>pe', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+    set_key('n', '<Leader>ne', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 end
 
 -- Setup autocomplete
