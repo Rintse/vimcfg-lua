@@ -153,7 +153,8 @@ nnoremap <Leader>d *N
 vnoremap <Leader>d *N
 
 " Convenient buffer stuff
-nnoremap <Leader>sb :vertical sb#<CR>
+nnoremap <Leader>sb :sb#<CR>
+nnoremap <Leader>vsb :vertical sb#<CR>
 
 " Window management
 nnoremap <silent> <Leader>m<Left> :call MoveWinLeft()<CR>
