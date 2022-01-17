@@ -126,8 +126,6 @@ imap <F1> <Nop>
 
 " Folding
 set foldmethod=syntax
-nnoremap <Leader><Left> :foldclose<CR>
-nnoremap <Leader><Right> :foldopen<CR>
 
 " Line objects
 xnoremap il g_o^
