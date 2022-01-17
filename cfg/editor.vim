@@ -124,6 +124,10 @@ inoremap [] []<Left>
 nmap <F1> <Nop>
 imap <F1> <Nop>
 
+" Folding
+nnoremap <Leader><Left> :foldclose<CR>
+nnoremap <Leader><Right> :foldopen<CR>
+
 " Line objects
 xnoremap il g_o^
 onoremap il :normal vil<CR>
