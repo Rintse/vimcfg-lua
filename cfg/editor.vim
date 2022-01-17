@@ -125,6 +125,7 @@ nmap <F1> <Nop>
 imap <F1> <Nop>
 
 " Folding
+set foldmethod=syntax
 nnoremap <Leader><Left> :foldclose<CR>
 nnoremap <Leader><Right> :foldopen<CR>
 
