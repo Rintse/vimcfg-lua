@@ -126,6 +126,7 @@ imap <F1> <Nop>
 
 " Folding
 set foldmethod=syntax
+set nofoldenable
 
 " Line objects
 xnoremap il g_o^
