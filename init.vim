@@ -35,6 +35,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
+Plug 'dhruvasagar/vim-table-mode'
+
 call plug#end()
 " ==== END Plug =====
 
