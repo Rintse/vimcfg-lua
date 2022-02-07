@@ -10,7 +10,7 @@ let g:fzf_layout = { 'window': { 'width': 0.6, 'height': 0.35 } }
 
 " ======= START Keybinds ==============
 
-let g:fzf_action = { 'ctrl-v': 'vsplit', 'ctrl-s': 'split' }
+let g:fzf_action = { 'ctrl-s': 'vsplit', 'ctrl-i': 'split' }
 
 nnoremap <silent> <Leader>f :NERDTreeClose <bar> :Files<CR>
 nnoremap <silent> <Leader>rf :NERDTreeClose <bar> :Rg<CR>

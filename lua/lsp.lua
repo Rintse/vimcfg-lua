@@ -3,7 +3,7 @@ local autocomp = require('autocomplete')
 
 vim.lsp.set_log_level("debug")
 
-local servers = { 'hls', 'eslint', 'pyright' }
+local servers = { 'hls', 'clangd', 'eslint', 'pyright' }
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -35,15 +35,6 @@ autocomp()
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp')
     .update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
-nvim_lsp.clangd.setup{
-    capabilities = capabilities,
-    on_attach = on_attach,
-    cmd = { "clangd-12", "--background-index" },
-    flags = {
-        debounce_text_changes = 150,
-    }
-}
 
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {

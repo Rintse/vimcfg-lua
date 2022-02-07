@@ -109,9 +109,9 @@ nnoremap ZZ <Nop>
 " Easy black hole reg
 nnoremap - "_
 
-" Swap colon and semicolon
-noremap ; :
+" Movement keys on neutral hand position
 noremap : ;
+noremap ; :
 
 " Place cursor in between brackets
 inoremap "" ""<Left>
