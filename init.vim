@@ -23,6 +23,11 @@ Plug 'RRethy/vim-illuminate'
 Plug 'lervag/vimtex'
 Plug 'neovim/nvim-lspconfig'
 
+Plug 'rmagatti/goto-preview'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Autocomplete (cmp)
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
@@ -57,5 +62,6 @@ source ~/.config/nvim/cfg/buffergator.vim
 source ~/.config/nvim/cfg/latex.vim
 
 " LSP stuff in lua
+:lua require('goto-preview').setup()
 :lua require('lsp')
 :lua require('autocomplete')
