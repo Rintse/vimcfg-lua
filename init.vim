@@ -62,6 +62,7 @@ source ~/.config/nvim/cfg/buffergator.vim
 source ~/.config/nvim/cfg/latex.vim
 
 " LSP stuff in lua
-:lua require('goto-preview').setup()
+:lua require('goto-preview').setup{ height = 25; }
+:lua require('nvim-treesitter.configs').setup{highlight={enable = true};}
 :lua require('lsp')
 :lua require('autocomplete')

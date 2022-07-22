@@ -3,7 +3,13 @@ local autocomp = require('autocomplete')
 
 -- vim.lsp.set_log_level("debug")
 
-local servers = { 'hls', 'clangd', 'eslint', 'pyright' }
+local servers = { 
+    'hls', 
+    'clangd', 
+    'eslint', 
+    'tsserver',
+    'pyright'
+}
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -28,7 +34,7 @@ local on_attach = function(client, bufnr)
     set_key('n', '<Leader>gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
     set_key('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     set_key('n', '<Leader>a', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-    set_key('n', '<Leader>d', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+    set_key('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
     set_key('n', '<Leader>gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     set_key('n', '<Leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
 
