@@ -31,11 +31,6 @@ function! CloseBuffer(save)
     endif
 endfunction
 
-" Moves the current window to the left
-function! MoveWinLeft()
-    execute "normal" winnr()-1 "\<C-w>x" "\<C-w>h"
-endfunction
-
 
 " ======== BEGIN General ==============
 
@@ -53,6 +48,10 @@ set wildmenu
 " Relative linenumbers except current line 
 set number
 set relativenumber
+
+" More intuitve split locations
+set splitbelow
+set splitright
 
 " Hidden buffers for easy switching
 set hidden
@@ -80,6 +79,9 @@ set belloff=all
 
 " Don't highlight searches by default
 set nohls
+
+" Only search case sensitive if a capital is typed
+set smartcase
 
 " Whitespace after comment
 let g:NERDSpaceDelims = 1
@@ -161,8 +163,12 @@ nnoremap <Leader>sb :sb#<CR>
 nnoremap <Leader>vsb :vertical sb#<CR>
 
 " Window management
-nnoremap <silent> <Leader>m<Left> :call MoveWinLeft()<CR>
-nnoremap <silent> <Leader>m<Right> <C-w>x <C-w>l
+nnoremap <Leader>mm <Cmd>WinShift<CR>
+nnoremap <Leader>x <Cmd>WinShift swap<CR>
+nnoremap <Leader>mh <Cmd>WinShift left<CR>
+nnoremap <Leader>mj <Cmd>WinShift down<CR>
+nnoremap <Leader>mk <Cmd>WinShift up<CR>
+nnoremap <Leader>ml <Cmd>WinShift right<CR>
 nnoremap <Leader>- <C-w><<CR>
 nnoremap <Leader>= <C-w>><CR>
 

@@ -3,40 +3,44 @@ filetype plugin indent on
 
 " ==== BEGIN Plug =====
 call plug#begin()
-
+" Highlight other occurences of word under cursor
+Plug 'RRethy/vim-illuminate'
+" Allow other processes to interact (like back-srch in pdf)
 Plug 'mhinz/neovim-remote'
-Plug 'tpope/vim-fugitive'
+" Surround objects
+Plug 'tpope/vim-surround'
+
+" Looks
 Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdcommenter'
 
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+" File/buffer/window management
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'preservim/nerdtree'
-
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-
-Plug 'RRethy/vim-illuminate'
-
-Plug 'lervag/vimtex'
-Plug 'neovim/nvim-lspconfig'
-
-Plug 'rmagatti/goto-preview'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'sindrets/winshift.nvim'
 
 " Autocomplete (cmp)
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
+
+" LSP stuff
+Plug 'rmagatti/goto-preview'
+Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
+" LSP Dependencies
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Pandoc/LaTeX
+Plug 'lervag/vimtex'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 

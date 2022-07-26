@@ -5,6 +5,7 @@ local autocomp = require('autocomplete')
 
 local servers = { 
     'hls', 
+    'rls', 
     'clangd', 
     'eslint', 
     'tsserver',
